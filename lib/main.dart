@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'shop_page_of_incredible_project.dart';
+import 'view/shop_page_of_incredible_project.dart';
 
 void main() => runApp(MyApp());
 
