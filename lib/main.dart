@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:manyakbirproje/view/home_page_of_incredible_project.dart';
 
 import 'view/shop_page_of_incredible_project.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
-        body: ShopPageOfIncredibleProject(),
+        body: HomePageOfIncredibleProject(),
       ),
     );
   }

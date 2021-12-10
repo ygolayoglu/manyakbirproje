@@ -2,6 +2,7 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:manyakbirproje/controller/shop_page_controller.dart';
+import 'package:manyakbirproje/widgets/bottom_app_bar.dart';
 
 class ShopPageOfIncredibleProject extends GetWidget {
   ShopPageOfIncredibleProject({Key? key}) : super(key: key);
@@ -69,30 +70,7 @@ class ShopPageOfIncredibleProject extends GetWidget {
         //     ],
         //   ),
         // ),
-        bottomNavigationBar: BottomAppBar(
-          shape: CircularNotchedRectangle(),
-          notchMargin: 5,
-          color: Color(0xff363545),
-          child: Container(
-            height: 40,
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 60),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(
-                    Icons.shop,
-                    color: Colors.white,
-                  ),
-                  Icon(
-                    Icons.comment,
-                    color: Colors.white,
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
+        bottomNavigationBar: bottomBuild(),
         body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
